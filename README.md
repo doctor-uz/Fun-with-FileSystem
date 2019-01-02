@@ -1,3 +1,9 @@
+#### 1. My [solution](https://github.com/doctor-uz/Fun-with-FileSystem/tree/master/files/part1) for part 1
+
+#### 2. My [solution](https://github.com/doctor-uz/Fun-with-FileSystem/tree/master/files/part2) for part 2
+
+
+
 # Fun with `fs`
 
 * Create a new directory named "fun-with-fs" and add to it a js file named "index.js"
@@ -7,13 +13,13 @@
 * In index.js, require the <a href="https://nodejs.org/api/fs.html">`fs`</a> module and use its <a href="https://nodejs.org/api/fs.html#fs_fs_readdir_path_options_callback">`readdir`</a> method to get a list of items contained in the files directory and log it to the console. Then use the <a href="https://nodejs.org/api/fs.html#fs_fs_stat_path_callback">`stat`</a> method on each item to determine if it is a directory (you can do this by using the `isDirectory` method of the <a href="https://nodejs.org/api/fs.html#fs_class_fs_stats">`Stats`</a> instance passed to the callback you pass to `stat`). Log the contents of each directory recursively so that when you run index.js you see something like the following:
 
     ```
-  /Users/discoduck/fun-with-fs/files contains README.md, part1, part2
-  /Users/discoduck/fun-with-fs/files/part1 contains a, b
-  /Users/discoduck/fun-with-fs/files/part2 contains index.html, script.js
-  /Users/discoduck/fun-with-fs/files/part1/a contains images, index.html, stylesheet.css
-  /Users/discoduck/fun-with-fs/files/part1/b contains images, index.html, stylesheet.css
-  /Users/discoduck/fun-with-fs/files/part1/a/images contains cats.png, kitty1_150x150.jpg, kitty2_150x150.jpg, kitty3_150x150.jpg
-  /Users/discoduck/fun-with-fs/files/part1/b/images contains boxes.png
+    /Users/discoduck/fun-with-fs/files contains README.md, part1, part2
+    /Users/discoduck/fun-with-fs/files/part1 contains a, b
+    /Users/discoduck/fun-with-fs/files/part2 contains index.html, script.js
+    /Users/discoduck/fun-with-fs/files/part1/a contains images, index.html, stylesheet.css
+    /Users/discoduck/fun-with-fs/files/part1/b contains images, index.html, stylesheet.css
+    /Users/discoduck/fun-with-fs/files/part1/a/images contains cats.png, kitty1_150x150.jpg, kitty2_150x150.jpg, kitty3_150x150.jpg
+    /Users/discoduck/fun-with-fs/files/part1/b/images contains boxes.png
     ```
 
 * If any of the callbacks you pass to `readdir` or `stat` get passed an error, log the error to the console and call `process.exit`.
